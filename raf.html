@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>raf</title>
+  </head>
+  <body>
+    <script>
+      var raf = require('raf');
+      var targetFPS = 60;
+      var frameDuration = 1000 / targetFPS;
+      var last = 0;
+      raf(function tick(ts) {
+        if (last) {
+          var dt = ts - last;
+          var fps = (frameDuration / dt) * targetFPS;
+          document.body.innerText = Math.floor(fps);
+        }
+        last = ts;
+        raf(tick);
+      });
+    </script>
+  </body>
+</html>

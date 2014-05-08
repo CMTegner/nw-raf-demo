@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>raf-stream</title>
+  </head>
+  <body>
+    <script>
+      var raf = require('raf-stream');
+      var targetFPS = 60;
+      var frameDuration = 1000 / targetFPS;
+      raf(function tick(dt) {
+        if (dt) {
+          var fps = (frameDuration / dt) * targetFPS;
+          document.body.innerText = Math.floor(fps);
+        }
+      });
+    </script>
+  </body>
+</html>

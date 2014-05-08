@@ -1,0 +1,29 @@
+{
+  "name": "nw-raf-demo",
+  "main": "index.html",
+  "dependencies": {
+    "raf": "git://github.com/CMTegner/raf#polyfill-v.1.0.0",
+    "raf-stream": "0.0.2"
+  },
+  "version": "0.0.1",
+  "description": "node-webkit raf demo",
+  "scripts": {
+    "start": "open app.nw",
+    "build": "zip -r app.nw *.html package.json node_modules"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/CMTegner/nw-raf-demo.git"
+  },
+  "keywords": [
+    "raf",
+    "nw",
+    "node-webkit"
+  ],
+  "author": "Christian Maughan Tegnér <christian.tegner@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CMTegner/nw-raf-demo/issues"
+  },
+  "homepage": "https://github.com/CMTegner/nw-raf-demo"
+}
