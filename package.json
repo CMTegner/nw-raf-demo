@@ -2,8 +2,8 @@
   "name": "nw-raf-demo",
   "main": "index.html",
   "dependencies": {
-    "raf": "1.0.1",
-    "raf-stream": "1.0.1"
+    "raf": "2.0.0",
+    "raf-stream": "2.0.0"
   },
   "version": "0.0.1",
   "description": "node-webkit raf demo",
