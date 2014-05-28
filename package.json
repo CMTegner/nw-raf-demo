@@ -5,7 +5,7 @@
     "raf": "2.0.0",
     "raf-stream": "2.0.0"
   },
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "node-webkit raf demo",
   "scripts": {
     "start": "open app.nw",
